@@ -1,1 +1,37 @@
+<!-- Wraper div centered vertically and horizontaly -->
+<div class="wraper">
+  <!-- Div for description and date and poster -->
+  <div class="upper-content">
+    <!-- div for LEFT part: icon, text and date -->
+    <div class="left-description-date">
+      <!-- icon and description -->
+      <div class="description">
+        <!-- icon -->
+        <img [src]="data[step()].icon" alt="" />
+        <!-- Title -->
+        <div class="description__title">{{ data[step()].title }}</div>
+        <!-- Description -->
+        <div class="description__description">
+          {{ data[step()].description }}
+        </div>
+      </div>
+      <!-- Date -->
+      <div class="date">{{ data[step()].date }}</div>
+    </div>
+    <!-- RIGHT part: the poster -->
+    <div class="right-poster">
+      <img [src]="data[step()].poster" alt="" />
+    </div>
+  </div>
+  <!-- wraper for arrows and stepper -->
+  <div class="arrows-stepper">
+    <!-- arrows -->
+    <div>
+      <img src="assets/images/arrow_left.svg" alt="" />
+    </div>
+    <!-- stepper -->
+    <div></div>
+  </div>
+</div>
+
 <router-outlet></router-outlet>
