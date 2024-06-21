@@ -26,8 +26,21 @@
   <!-- wraper for arrows and stepper -->
   <div class="arrows-stepper">
     <!-- arrows -->
-    <div>
-      <img src="assets/images/arrow_left.svg" alt="" />
+    <div class="arrows-wraper">
+      <img
+        src="assets/images/arrow_left.svg"
+        alt=""
+        class="arrow"
+        [ngClass]="{ 'arrow--disabled': step() === 0 }"
+        (click)="setStep('-')"
+      />
+      <img
+        src="assets/images/arrow_left.svg"
+        alt=""
+        class="arrow arrow-right"
+        [ngClass]="{ 'arrow--disabled': step() === 2 }"
+        (click)="setStep('+')"
+      />
     </div>
     <!-- stepper -->
     <div></div>

@@ -15,4 +15,20 @@ export class AppComponent {
 
   public step = signal(0);
   public data = data;
+
+  public setStep(operation: '+' | '-') {
+    switch (operation) {
+      case '+':
+        this.step.update((val) => val + 1);
+        break;
+
+      case '-':
+        this.step.update((val) => val - 1);
+
+        break;
+
+      default:
+        break;
+    }
+  }
 }

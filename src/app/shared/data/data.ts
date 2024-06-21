@@ -21,7 +21,7 @@ export const data: Array<MovieI> = [
     '/assets/images/icons/jedi_icon.svg',
     '/assets/images/posters/return_of_jedi.svg',
     'Le retour du Jedi',
-    "Le malkéfique Empire galactique construit une nouvelle station spatiale l'Etoile de la mort pour anéantir définitivement l'Alliance rebelle.",
+    "Le maléfique Empire galactique construit une nouvelle station spatiale l'Etoile de la mort pour anéantir définitivement l'Alliance rebelle.",
     1983,
     false
   ),

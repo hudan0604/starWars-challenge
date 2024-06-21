@@ -56,5 +56,26 @@
     flex: 1;
     display: flex;
     align-items: center;
+
+    .arrows-wraper {
+      display: flex;
+      gap: 18px;
+
+      .arrow {
+        opacity: 1;
+        transition: opacity 400ms linear;
+        cursor: pointer;
+
+        &--disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+          pointer-events: none;
+        }
+      }
+
+      .arrow-right {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
